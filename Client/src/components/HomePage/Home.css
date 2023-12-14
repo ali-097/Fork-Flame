@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Lateef:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Lateef:wght@200&family=Moon+Dance&display=swap");
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url("/background.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;
+	font-family: "Lateef", serif;
+	animation: fadeIn 1s ease-in-out;
+	color: #fff;
+}
+
+.home--title {
+	margin: 0;
+	padding: 0;
+	background: url("/HomeBG.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.home--title::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home--title--navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 1.5rem;
+}
+
+.home--title--navbar img {
+	margin-top: 1rem;
+	width: 8rem;
+	animation: fadeIn 1s ease-in-out;
+	animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.home--title--navbar--list {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	transform: translateX(100%);
+	animation: slideIn 1s ease-in-out forwards;
+}
+
+.link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.home--title--navbar--list li {
+	font-size: 1.5rem;
+	padding: 0.1rem 1.5rem;
+	border: 1px solid white;
+}
+
+.home--title--navbar--list li:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: scale(1.05);
+	transition: all 0.1s ease-in-out;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+.home--title--content {
+	margin: 5.88rem 0 9.42rem 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.home--title--content h2 {
+	font-family: "Inria Serif", serif;
+	font-weight: 100;
+	font-size: 2.6rem;
+	height: 0;
+	margin: 0;
+	animation: fadeIn 1s ease-in-out forwards;
+	animation-delay: 0.5s;
+}
+
+.home--title--content h1 {
+	font-family: "Moon Dance", cursive;
+	font-weight: 100;
+	font-size: 6rem;
+	animation-delay: 1s;
+	animation: fadeIn 2s ease-in-out forwards;
+}
+
+.home--title--content h3 {
+	font-family: "Inria Serif", serif;
+	font-weight: 100;
+	font-size: 1.5rem;
+	padding: 1rem 1.5rem;
+	border: 1px solid white;
+	margin-top: 0;
+	margin-bottom: 8.5rem;
+	animation-delay: 1.5s;
+	animation: fadeIn 2s ease-in-out forwards;
+}
+
+.home--title--content h3:hover {
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+	filter: blur(0.3px);
+	transform: scale(1.1);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.home--title--content h2,
+.home--title--content h1,
+.home--title--content h3 {
+	opacity: 0;
+}
+
+.slogan {
+	text-align: center;
+}
+
+.slogan--upper {
+	color: #d3d3d3;
+	font-weight: 100;
+	font-size: 3rem;
+	margin-bottom: 0;
+	height: 0;
+}
+
+.slogan--lower {
+	font-family: "Moon Dance";
+	font-weight: 100;
+	font-size: 3.2rem;
+	font-weight: 800;
+}
+
+.menu {
+	width: 100%;
+	max-width: 60rem;
+	margin: 0 auto;
+	overflow: hidden;
+	/* border-radius: 80px; */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	background-color: #283128;
+}
+
+.slider {
+	display: flex;
+	overflow: hidden;
+	border-radius: 80px;
+}
+
+.slider img {
+	height: 15rem;
+	width: auto;
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+}
+
+.slider img:hover {
+	transform: scale(1.05);
+}
