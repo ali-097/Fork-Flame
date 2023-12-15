@@ -58,7 +58,7 @@ const Home = () => {
 			</div>
 			<div className='slogan'>
 				<p className='slogan--upper'>
-					An outstanding setting where you can savor the moment
+					An outstanding setting where you can savour the moment
 				</p>
 				<p className='slogan--lower'>
 					YOUR SENSORY EXPERIENCE STARTS HERE
@@ -68,7 +68,7 @@ const Home = () => {
 				<Slider
 					{...settings}
 					className='slider'
-				>
+					>
 					<img src={item1} />
 					<img src={item2} />
 					<img src={item3} />
@@ -76,6 +76,7 @@ const Home = () => {
 					<img src={item5} />
 				</Slider>
 			</div>
+			<p className="menu--footer">Indulge Your Senses: Explore Our Culinary Symphony</p>
 		</>
 	);
 };
