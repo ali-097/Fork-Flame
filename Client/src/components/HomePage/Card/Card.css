@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Lateef:wght@200&family=Moon+Dance&display=swap");
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: rgba(36, 40, 36, 0.5);
+	gap: 1rem;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	transform: translateX(-0.5rem);
+	transition: all 0.1s ease-in-out;
+}
+
+.card:hover > .card--image {
+	opacity: 1;
+}
+
+.card--description {
+	width: 25.20833rem;
+	height: 50vh;
+	font-weight: 400;
+	text-align: center;
+}
+
+.card--description h1 {
+	font-family: "Moon Dance", cursive;
+	font-size: 2.2rem;
+	font-weight: 100;
+}
+
+.card--description p {
+	font-family: "Lateef", serif;
+	font-size: 1.3rem;
+}
+
+.link p {
+	width: 7rem;
+	border: 1px solid white;
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
+}
+
+.link p:hover {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: rgb(129, 129, 129) 0px 4px 12px;
+	transform: scale(1.05);
+	transition: all 0.1s ease-in-out;
+}
+
+.card--image {
+	width: 29.08333rem;
+	height: 17.45833rem;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	transition: 1s ease;
+}
