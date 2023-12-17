@@ -1,43 +1,17 @@
 import "./Home.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { CardData } from "./CardData.js";
 import Card from "./Card/Card.jsx";
-import logo from "/logo.png";
-import logo_alt from "/logo-alt.png";
-import instagram from "/instagram.png";
-import facebook from "/facebook.png";
-import twitter from "/twitter.png";
 
 const Home = () => {
-	const [cards] = useState({
-		menu: {
-			cardTitle: "Menu",
-			cardDescription:
-				"Enter a culinary sanctuary where our menu unveils an artful tapestry of flavors. Meticulously crafted dishes blend innovation with elegance, inviting you to savor a symphony of tastes. Every plate is a chapter in an unforgettable journey of culinary artistry.",
-			cardImage: "/menu.png",
-			right: true,
-		},
-		location: {
-			cardTitle: "Location",
-			cardDescription:
-				"Explore our culinary haven spanning various locations, where each setting tells a distinctive tale of flavors. From urban chic to coastal allure, our venues merge innovation with comfort, promising an enchanting encounter in every locale.",
-			cardImage: "/location.png",
-			right: false,
-		},
-		gallery: {
-			cardTitle: "Gallery",
-			cardDescription:
-				"Explore our gallery, a visual journey showcasing diverse aesthetics that define our culinary world. From intimate urban scenes to captivating coastal views, each image offers a preview of the unique ambiance awaiting you.",
-			cardImage: "/gallery.png",
-			right: true,
-		},
-	});
+	const [cards] = useState(CardData);
 	return (
 		<>
 			<div className='home--title'>
 				<div className='home--title--navbar'>
 					<img
-						src={logo}
+						src='/logo.png'
 						alt='logo'
 						onMouseEnter={(e) =>
 							(e.target.style.cursor = "pointer")
@@ -123,7 +97,7 @@ const Home = () => {
 			</div>
 			<div className='footer'>
 				<img
-					src={logo_alt}
+					src='/logo-alt.png'
 					alt='logo'
 					onClick={() =>
 						window.scrollTo({ top: 0, behavior: "smooth" })
@@ -131,21 +105,21 @@ const Home = () => {
 				/>
 				<div className='socials'>
 					<img
-						src={instagram}
+						src='/instagram.png'
 						alt='instagram'
 						onClick={() =>
 							window.open("https://www.instagram.com/forknflame/")
 						}
 					/>
 					<img
-						src={facebook}
+						src='/facebook.png'
 						alt='facebook'
 						onClick={() =>
 							window.open("https://www.facebook.com/forknflame/")
 						}
 					/>
 					<img
-						src={twitter}
+						src='/twitter.png'
 						alt='twitter'
 						onClick={() =>
 							window.open("https://twitter.com/forknflame")
