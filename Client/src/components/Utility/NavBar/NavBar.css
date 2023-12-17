@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap");
+
+.navbar {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+.navbar img {
+	width: 5rem;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	gap: 2.5rem;
+}
+
+.navbar ul li {
+	border: 1px solid white;
+	padding: 0.5rem 2rem;
+	cursor: pointer;
+}
+
+.navbar ul li:hover {
+	background-color: white;
+	color: black;
+}

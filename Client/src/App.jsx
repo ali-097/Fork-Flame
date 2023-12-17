@@ -4,6 +4,7 @@ import Menu from "./components/MenuPage/Menu";
 import Gallery from "./components/GalleryPage/Gallery";
 import About from "./components/AboutPage/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 const App = () => {
 	return (

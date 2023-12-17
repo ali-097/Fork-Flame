@@ -1,0 +1,15 @@
+.menu--details h1 {
+	color: #b9b9b9;
+	font-family: Moon Dance;
+	font-size: 4.5rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.menu--details p {
+	color: #fff;
+	font-family: Lateef;
+	font-size: 1.6rem;
+	font-weight: 400;
+	width: 51rem;
+}

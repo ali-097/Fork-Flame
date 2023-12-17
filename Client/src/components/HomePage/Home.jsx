@@ -7,7 +7,7 @@ import Card from "./Card/Card.jsx";
 const Home = () => {
 	const [cards] = useState(CardData);
 	return (
-		<>
+		<div className='home--page'>
 			<div className='home--title'>
 				<div className='home--title--navbar'>
 					<img
@@ -131,7 +131,7 @@ const Home = () => {
 					47 58 - PAKISTAN
 				</p>
 			</div>
-		</>
+		</div>
 	);
 };
 
