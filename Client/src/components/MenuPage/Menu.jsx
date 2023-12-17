@@ -9,15 +9,19 @@ const Menu = () => {
 	return (
 		<div className='menu--page'>
 			<NavBar />
-			<div className='menu--items'></div>
-			{Object.keys(itemsTypes).map((item) => (
-				<MenuDetails
-					key={item}
-					title={itemsTypes[item].title}
-					description={itemsTypes[item].description}
-					left={itemsTypes[item].left}
-				/>
-			))}
+			<div className='menu--items'>
+				{Object.keys(itemsTypes).map((item) => (
+					<MenuDetails
+						key={item}
+						title={itemsTypes[item].title}
+						description={itemsTypes[item].description}
+						left={itemsTypes[item].left}
+					/>
+				))}
+			</div>
+			<div className='menu--footer'>
+				<h1>Footer</h1>
+			</div>
 		</div>
 	);
 };

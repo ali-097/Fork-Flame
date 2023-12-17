@@ -17,8 +17,9 @@ const Card = ({ cardTitle, cardDescription, cardImage, right }) => {
 					<Link
 						className='link'
 						to={`/${
-							cardTitle === "Location"
-								? "About?id=Location"
+							cardTitle === "Location" ||
+							cardTitle === "Our Chefs"
+								? `About?id=${cardTitle}`
 								: cardTitle
 						}`}
 					>

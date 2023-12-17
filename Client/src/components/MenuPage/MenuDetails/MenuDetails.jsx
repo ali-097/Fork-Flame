@@ -19,6 +19,7 @@ const MenuDetails = ({ title, description, left }) => {
 		<div className='menu--details'>
 			<h1 style={titleStyles}>{title}</h1>
 			<p style={descStyles}>{description}</p>
+			{!left && <div style={{ marginBottom: "8rem" }}>&nbsp;</div>}
 		</div>
 	);
 };

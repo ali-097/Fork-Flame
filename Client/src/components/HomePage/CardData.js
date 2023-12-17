@@ -20,4 +20,11 @@ export const CardData = {
 		cardImage: "/gallery.png",
 		right: true,
 	},
+	Chefs: {
+		cardTitle: "Our Chefs",
+		cardDescription:
+			"Meet Our Culinary Visionaries,  our chefs are maestros of taste, crafting inventive dishes that redefine gastronomic excellence. Each creation reflects their artistry and mastery, inviting you to experience refined culinary delights.",
+		cardImage: "/chef.png",
+		right: false,
+	},
 };

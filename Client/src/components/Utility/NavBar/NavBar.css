@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap");
 
 .navbar {
-	background-color: #232523;
-	opacity: 75%;
+	background-color: rgb(35, 37, 35, 0.75);
+	/* opacity: 75%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,21 +18,17 @@
 	align-items: center;
 	list-style: none;
 	gap: 2.5rem;
-	
 }
 
 .navbar ul li {
-	border: 1px solid #B9B9B9;
-	color: #B9B9B9;
+	border: 1px solid #d5d5d5;
+	color: #d5d5d5;
 	padding: 0.5rem 2rem;
 	cursor: pointer;
 }
 
 .navbar ul li:hover {
 	background-color: #fffbfb;
-	color:#283128;
+	color: #283128;
 	box-shadow: #283128 20px 4px 12px;
 }
-
-
-
