@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap");
 
 .navbar {
-	background-color: black;
+	background-color: #232523;
+	opacity: 75%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding: 1rem 2rem;
 }
@@ -14,17 +15,24 @@
 
 .navbar ul {
 	display: flex;
+	align-items: center;
 	list-style: none;
 	gap: 2.5rem;
+	
 }
 
 .navbar ul li {
-	border: 1px solid white;
+	border: 1px solid #B9B9B9;
+	color: #B9B9B9;
 	padding: 0.5rem 2rem;
 	cursor: pointer;
 }
 
 .navbar ul li:hover {
-	background-color: white;
-	color: black;
+	background-color: #fffbfb;
+	color:#283128;
+	box-shadow: #283128 20px 4px 12px;
 }
+
+
+
