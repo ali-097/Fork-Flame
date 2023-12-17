@@ -4,11 +4,7 @@ import "./NavBar.css";
 const NavBar = () => {
 	return (
 		<div className='navbar'>
-			<img
-				src='/logo.png'
-				alt='logo'
-				className='logo'
-			/>
+			
 			<ul>
 				<Link
 					to='/'
@@ -28,12 +24,26 @@ const NavBar = () => {
 				>
 					<li>Gallery</li>
 				</Link>
+			
+				<img
+				src='/logo.png'
+				alt='logo'
+				className='logo'
+				/>
+
 				<Link
 					to='/reservation'
 					className='link'
 				>
 					<li>Reservation</li>
 				</Link>
+				<Link
+					to='/contact'
+					className='link'
+				>
+					<li>Contact</li>
+				</Link>
+
 				<Link
 					to='/about'
 					className='link'
