@@ -1,9 +1,25 @@
+.menu--details {
+	animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+	from {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 .menu--details h1 {
 	color: #b9b9b9;
 	font-family: Moon Dance;
 	font-size: 4.5rem;
 	font-weight: 400;
 	margin-bottom: 2rem;
+	animation: fadeInLeft 0.5s ease-out;
 }
 
 .menu--details p {
@@ -13,4 +29,32 @@
 	font-weight: 400;
 	width: 51rem;
 	margin-bottom: 2rem;
+	animation: fadeInRight 0.5s ease-out;
+}
+
+.menu--details--name:hover + .menu--details--desc {
+	transform: scale(1.05) translateX(1rem);
+	transition: transform 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

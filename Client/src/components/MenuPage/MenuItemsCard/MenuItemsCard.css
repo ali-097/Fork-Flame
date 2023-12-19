@@ -1,0 +1,41 @@
+.mi--card--title {
+	color: #b9b9b9;
+	font-family: Moon Dance;
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 400;
+	padding-top: 10rem;
+}
+
+.item--card {
+	padding: 2rem 8rem;
+	display: flex;
+	align-items: center;
+	gap: 6rem;
+}
+
+.item--card--overlay {
+	text-align: justify;
+	height: 18.20833rem;
+	background: rgba(29, 29, 28, 0.71);
+	padding: 1.5rem;
+}
+
+.item--name {
+	color: #fff;
+	font-family: Moon Dance;
+	font-size: 1.7rem;
+	font-weight: 100;
+}
+
+.item--desc {
+	color: #fff;
+	font-family: Lateef;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+.item--image {
+	width: 100%;
+	height: 100%;
+}

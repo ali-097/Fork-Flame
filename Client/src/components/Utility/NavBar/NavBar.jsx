@@ -4,7 +4,6 @@ import "./NavBar.css";
 const NavBar = () => {
 	return (
 		<div className='navbar'>
-			
 			<ul>
 				<Link
 					to='/'
@@ -24,11 +23,11 @@ const NavBar = () => {
 				>
 					<li>Gallery</li>
 				</Link>
-			
+
 				<img
-				src='/logo.png'
-				alt='logo'
-				className='logo'
+					src='/logo.png'
+					alt='logo'
+					className='logo'
 				/>
 
 				<Link
@@ -37,12 +36,6 @@ const NavBar = () => {
 				>
 					<li>Reservation</li>
 				</Link>
-				<Link
-					to='/contact'
-					className='link'
-				>
-					<li>Contact</li>
-				</Link>
 
 				<Link
 					to='/about'
@@ -50,6 +43,16 @@ const NavBar = () => {
 				>
 					<li>About Us</li>
 				</Link>
+				<li
+					onClick={() =>
+						window.scrollTo({
+							top: document.body.scrollHeight,
+							behavior: "smooth",
+						})
+					}
+				>
+					Contact
+				</li>
 			</ul>
 		</div>
 	);

@@ -2,15 +2,40 @@
 
 .navbar {
 	background-color: rgb(35, 37, 35, 0.75);
-	/* opacity: 75%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 1rem 2rem;
+	/* Add animation properties */
+	animation: fadeInDown 0.5s ease-out;
+}
+
+/* Keyframes for fadeInDown animation */
+@keyframes fadeInDown {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .navbar img {
 	width: 5rem;
+	/* Add animation properties */
+	animation: rotate 2s linear infinite;
+}
+
+/* Keyframes for rotate animation */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .navbar ul {
@@ -25,10 +50,29 @@
 	color: #d5d5d5;
 	padding: 0.5rem 2rem;
 	cursor: pointer;
+	/* Add animation properties */
+	transition: background-color 0.3s ease, color 0.3s ease,
+		box-shadow 0.3s ease;
 }
 
 .navbar ul li:hover {
 	background-color: #fffbfb;
 	color: #283128;
 	box-shadow: #283128 20px 4px 12px;
+}
+
+/* Add animation for li hover effect */
+.navbar ul li:hover {
+	animation: shadowPulse 0.5s ease-in-out;
+}
+
+/* Keyframes for shadowPulse animation */
+@keyframes shadowPulse {
+	0%,
+	100% {
+		box-shadow: #283128 20px 4px 12px;
+	}
+	50% {
+		box-shadow: #283128 20px 4px 20px;
+	}
 }

@@ -1,6 +1,8 @@
 .menu--page {
 	background-image: url("./background.png");
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.menu--items--card {
+	margin-bottom: 10rem;
 }

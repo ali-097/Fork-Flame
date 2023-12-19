@@ -1,4 +1,4 @@
-export const itemTypes = {
+export const itemsTypes = {
 	appetizers: {
 		title: "Appetizers",
 		description:

@@ -1,11 +1,16 @@
-import { useState } from "react";
 import NavBar from "../Utility/NavBar/NavBar.jsx";
-import { itemTypes } from "./ItemTypes.js";
+import { itemsTypes } from "./ItemTypes.js";
+import { MenuItems } from "./MenuItems.js";
 import MenuDetails from "./MenuDetails/MenuDetails.jsx";
+import MenuItemsCard from "./MenuItemsCard/MenuItemsCard.jsx";
+import Footer from "../Utility/Footer/Footer.jsx";
 import "./Menu.css";
+import { useEffect } from "react";
 
 const Menu = () => {
-	const [itemsTypes] = useState(itemTypes);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='menu--page'>
 			<NavBar />
@@ -19,9 +24,16 @@ const Menu = () => {
 					/>
 				))}
 			</div>
-			<div className='menu--footer'>
-				<h1>Footer</h1>
+			<div className='menu--items--card'>
+				{Object.keys(MenuItems).map((item) => (
+					<MenuItemsCard
+						key={item}
+						title={item}
+						items={MenuItems[item]}
+					/>
+				))}
 			</div>
+			<Footer />
 		</div>
 	);
 };
