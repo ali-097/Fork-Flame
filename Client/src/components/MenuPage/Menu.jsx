@@ -1,7 +1,7 @@
 import NavBar from "../Utility/NavBar/NavBar.jsx";
-import { itemsTypes } from "./ItemTypes.js";
+// import { itemsTypes } from "./ItemTypes.js";
 import { MenuItems } from "./MenuItems.js";
-import MenuDetails from "./MenuDetails/MenuDetails.jsx";
+// import MenuDetails from "./MenuDetails/MenuDetails.jsx";
 import MenuItemsCard from "./MenuItemsCard/MenuItemsCard.jsx";
 import Footer from "../Utility/Footer/Footer.jsx";
 import "./Menu.css";

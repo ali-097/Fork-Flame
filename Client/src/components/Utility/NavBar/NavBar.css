@@ -21,8 +21,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-	.navbar ul{
+	.navbar ul {
 		flex-direction: column;
+	}
+	.navbar img {
+		display: none;
 	}
 }
 
@@ -53,7 +56,6 @@
 	color: #d5d5d5;
 	padding: 0.5rem 2rem;
 	cursor: pointer;
-	/* Add animation properties */
 	transition: background-color 0.3s ease, color 0.3s ease,
 		box-shadow 0.3s ease;
 }
