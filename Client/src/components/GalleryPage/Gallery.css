@@ -2,28 +2,14 @@
 	margin: 0;
 	padding: 0;
 	background-color: #2b332e;
-	background-size: cover;
-	background-position: center;
-	background-repeat: repeat-y;
-	font-family: "Lateef", serif;
-	color: #fff;
-	height: fit-content;
 }
 
-.gallery--img {
-    margin-top: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+.slider--container {
+	padding: 5rem;
 }
 
-.gallery--img img {
-	/* width: 100rem; */
-	/* aspect-ratio: 3/2; */
-	object-fit: contain;
+.slider img {
+	width: 100%;
+	height: 30rem;
+	object-fit: cover;
 }
-
-/* .gallery--img img:hover {
-	transform: scale(1.05);
-} */

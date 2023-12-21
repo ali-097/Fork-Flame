@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
 import NavBar from "../Utility/NavBar/NavBar.jsx";
 import Footer from "../Utility/Footer/Footer.jsx";
 import axios from "axios";
@@ -29,10 +30,20 @@ const Reservation = () => {
 			people: "",
 		});
 	};
+	useEffect(() => {
+		AOS.init({
+			duration: 1500,
+			once: false,
+			offset: 200,
+		});
+	}, []);
 	return (
 		<div className='reservation--page'>
 			<NavBar />
-			<div className='reservation--form--container'>
+			<div
+				className='reservation--form--container'
+				data-aos={"flip-down"}
+			>
 				<form
 					onSubmit={saveReservation}
 					className='reservation--form'
