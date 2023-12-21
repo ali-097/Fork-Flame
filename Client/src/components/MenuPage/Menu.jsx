@@ -14,7 +14,7 @@ const Menu = () => {
 	return (
 		<div className='menu--page'>
 			<NavBar />
-			<div className='menu--items'>
+			{/* <div className='menu--items'>
 				{Object.keys(itemsTypes).map((item) => (
 					<MenuDetails
 						key={item}
@@ -23,7 +23,7 @@ const Menu = () => {
 						left={itemsTypes[item].left}
 					/>
 				))}
-			</div>
+			</div> */}
 			<div className='menu--items--card'>
 				{Object.keys(MenuItems).map((item) => (
 					<MenuItemsCard

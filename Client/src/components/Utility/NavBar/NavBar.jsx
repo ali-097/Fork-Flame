@@ -23,7 +23,6 @@ const NavBar = () => {
 				>
 					<li>Gallery</li>
 				</Link>
-
 				<img
 					src='/logo.png'
 					alt='logo'

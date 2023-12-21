@@ -3,34 +3,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Lateef:wght@200&family=Moon+Dance&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap");
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(-20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
-@keyframes slideIn {
-	from {
-		transform: translateX(100%);
+@media only screen and (max-width: 768px) {
+	.home--title--navbar {
+	  margin: 0 1rem;
 	}
-	to {
-		transform: translateX(0);
+  
+	.home--title--navbar img {
+	  width: 6rem;
 	}
-}
 
-@keyframes slideInFromLeft {
-	from {
-		transform: translateX(-100%);
+	.home--title--navbar--list {
+		flex-direction: column;
 	}
-	to {
-		transform: translateX(0);
+  
+	.home--title--navbar--list li {
+	  padding: 0.1rem 1rem;
 	}
-}
+  
+	.home--title--content h2 {
+	  font-size: 1rem;
+	}
+  
+	.home--title--content h1 {
+	  font-size: 2rem;
+	}
+  
+	.home--title--content h3 {
+	  font-size: 1.2rem;
+	  margin-bottom: 5rem;
+	}
+  
+	.slogan--upper {
+	  font-size: 2rem;
+	}
+  
+	.slogan--lower {
+	  font-size: 1.8rem;
+	  margin-bottom: 2rem;
+	}
+  
+	.awards h1 {
+	  font-size: 1.2rem;
+	}
+  
+	.awards img {
+	  width: 8rem;
+	}
+  }
 
 .home--page {
 	margin: 0;
@@ -41,8 +61,8 @@
 	background-position: center;
 	background-repeat: repeat-y;
 	font-family: "Lateef", serif;
-	animation: fadeIn 1s ease-in-out;
 	color: #fff;
+	height: fit-content;
 }
 
 body::-webkit-scrollbar {
@@ -52,14 +72,13 @@ body::-webkit-scrollbar {
 .home--title {
 	margin: 0;
 	padding: 0;
-	background: url("/HomeBG.png");
+	background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)), url("/HomeBG.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
 }
 
-.home--title::before {
+/* .home--title::before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -67,7 +86,7 @@ body::-webkit-scrollbar {
 	bottom: 0px;
 	left: 0px;
 	background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .home--title--navbar {
 	display: flex;
@@ -79,17 +98,14 @@ body::-webkit-scrollbar {
 .home--title--navbar img {
 	margin-top: 1rem;
 	width: 8rem;
-	animation: fadeIn 1s ease-in-out;
-	animation: slideInFromLeft 1s ease-in-out forwards;
 }
 
 .home--title--navbar--list {
 	list-style: none;
 	display: flex;
 	gap: 1.5rem;
-	transform: translateX(100%);
-	animation: slideIn 1s ease-in-out forwards;
 }
+
 
 .home--title--navbar--list li {
 	cursor: pointer;
@@ -114,12 +130,11 @@ body::-webkit-scrollbar {
 }
 
 .home--title--content {
-	margin: 5.88rem 0 9.42rem 0;
+	margin: 5.88rem 0 4.42rem 0;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	animation: fadeIn 1s ease-in-out;
 }
 
 .home--title--content h2 {
@@ -128,16 +143,12 @@ body::-webkit-scrollbar {
 	font-size: 2.6rem;
 	height: 0;
 	margin: 0;
-	animation: fadeIn 1s ease-in-out forwards;
-	animation-delay: 0.5s;
 }
 
 .home--title--content h1 {
 	font-family: "Moon Dance", cursive;
 	font-weight: 100;
 	font-size: 6rem;
-	animation-delay: 1s;
-	animation: fadeIn 2s ease-in-out forwards;
 }
 
 .home--title--content h3 {
@@ -148,8 +159,6 @@ body::-webkit-scrollbar {
 	border: 1px solid white;
 	margin-top: 0;
 	margin-bottom: 8.5rem;
-	animation-delay: 1.5s;
-	animation: fadeIn 2s ease-in-out forwards;
 }
 
 .home--title--content h3:hover {
@@ -158,26 +167,20 @@ body::-webkit-scrollbar {
 	filter: blur(0.3px);
 	transform: scale(1.1);
 	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-}
-
-.home--title--content h2,
-.home--title--content h1,
-.home--title--content h3 {
-	opacity: 0;
 }
 
 .slogan {
 	text-align: center;
-	rotate: -3deg;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
 }
 
 .slogan--upper {
 	color: #d3d3d3;
 	font-weight: 100;
 	font-size: 3rem;
-	margin-bottom: 0;
-	height: 1rem;
+	
 }
 
 .slogan--lower {
@@ -216,5 +219,4 @@ body::-webkit-scrollbar {
 
 .awards img:hover {
 	transform: scale(1.05);
-	transition: all 0.1s ease-in-out;
 }

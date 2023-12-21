@@ -6,11 +6,9 @@
 	justify-content: center;
 	align-items: center;
 	padding: 1rem 2rem;
-	/* Add animation properties */
 	animation: fadeInDown 0.5s ease-out;
 }
 
-/* Keyframes for fadeInDown animation */
 @keyframes fadeInDown {
 	from {
 		transform: translateY(-20px);
@@ -22,10 +20,15 @@
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.navbar ul{
+		flex-direction: column;
+	}
+}
+
 .navbar img {
 	width: 5rem;
-	/* Add animation properties */
-	animation: rotate 2s linear infinite;
+	animation: rotate 20s linear infinite;
 }
 
 /* Keyframes for rotate animation */
