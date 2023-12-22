@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.post("/save-reservation", queries.saveReservation);
+app.get("/get-reservations", queries.getReservations);
 
 app.listen(port, () => {
 	console.log(`listening at http://localhost:${port}`);

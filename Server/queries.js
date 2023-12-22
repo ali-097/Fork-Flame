@@ -16,4 +16,17 @@ const saveReservation = (req, res) => {
 	console.log(req.body);
 };
 
-module.exports = { saveReservation };
+const getReservations = (req, res) => {
+	db.query("SELECT * FROM reservation", (err, result) => {
+		if (err) {
+			console.log(err);
+			res.status(500).json({ error: "Internal Server Error" });
+		} else {
+			// Log and send the result
+			console.log(result.rows);
+			res.status(200).json(result.rows);
+		}
+	});
+};
+
+module.exports = { saveReservation, getReservations };

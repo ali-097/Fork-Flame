@@ -3,6 +3,7 @@ import Reservation from "./components/ReservationPage/Reservation";
 import Menu from "./components/MenuPage/Menu";
 import Gallery from "./components/GalleryPage/Gallery";
 import About from "./components/AboutPage/About";
+import Admin from "./components/Admin/Admin";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
@@ -44,6 +45,10 @@ const App = () => {
 				<Route
 					path='/about/:Id'
 					element={<About />}
+				/>
+				<Route
+					path='/admin'
+					element={<Admin />}
 				/>
 			</Routes>
 		</Router>
