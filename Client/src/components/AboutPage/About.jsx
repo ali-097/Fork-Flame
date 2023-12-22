@@ -1,10 +1,10 @@
-import "./About.css";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { ChefData } from "./ChefData.js";
 import NavBar from "../Utility/NavBar/NavBar.jsx";
 import Footer from "../Utility/Footer/Footer.jsx";
 import ChefCards from "./ChefCards/ChefCards.jsx";
-import { ChefData } from "./ChefData.js";
-import { useEffect } from "react";
+import "./About.css";
 
 const About = () => {
 	const { Id } = useParams();
@@ -18,8 +18,16 @@ const About = () => {
 		<div className='about--page'>
 			<NavBar />
 			<div className='about--page--content'>
-				<h1 className='vision--title'>Our Vision</h1>
-				<div className='vision--content'>
+				<h1
+					className='vision--title'
+					data-aos={"zoom-in"}
+				>
+					Our Vision
+				</h1>
+				<div
+					className='vision--content'
+					data-aos={"zoom-in"}
+				>
 					<p className='vision--text'>
 						Welcome to Fork & Flame, where culinary passion meets
 						the artistry of the grill. At Fork & Flame, our vision
@@ -45,6 +53,7 @@ const About = () => {
 				<div
 					className='locations--container'
 					id='Location'
+					data-aos={"fade-down"}
 				>
 					<h1 className='locations--title'>Our Locations</h1>
 					<p className='locations--text'>
@@ -64,14 +73,17 @@ const About = () => {
 						<img
 							src='/about/location-1.jpg'
 							alt='location-1'
+							data-aos={"flip-right"}
 						/>
 						<img
 							src='/about/location-2.jpg'
 							alt='location-2'
+							data-aos={"flip-right"}
 						/>
 						<img
 							src='/about/location-3.jpg'
 							alt='location-3'
+							data-aos={"flip-right"}
 						/>
 					</div>
 				</div>
@@ -79,7 +91,12 @@ const About = () => {
 					className='chefs--container'
 					id='Chefs'
 				>
-					<h1 className='chefs--title'>Meet Our Chefs</h1>
+					<h1
+						className='chefs--title'
+						data-aos={"zoom-in-down"}
+					>
+						Meet Our Chefs
+					</h1>
 					{ChefData.chefs.map((chef) => (
 						<ChefCards
 							key={chef.name}

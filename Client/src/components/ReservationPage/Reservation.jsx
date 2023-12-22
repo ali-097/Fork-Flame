@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import AOS from "aos";
+import { useState } from "react";
 import NavBar from "../Utility/NavBar/NavBar.jsx";
 import Footer from "../Utility/Footer/Footer.jsx";
 import axios from "axios";
@@ -30,13 +29,7 @@ const Reservation = () => {
 			people: "",
 		});
 	};
-	useEffect(() => {
-		AOS.init({
-			duration: 1500,
-			once: false,
-			offset: 200,
-		});
-	}, []);
+
 	return (
 		<div className='reservation--page'>
 			<NavBar />

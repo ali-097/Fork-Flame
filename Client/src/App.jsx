@@ -4,9 +4,19 @@ import Menu from "./components/MenuPage/Menu";
 import Gallery from "./components/GalleryPage/Gallery";
 import About from "./components/AboutPage/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+	useEffect(() => {
+		AOS.init({
+			duration: 1500,
+			once: true,
+			offset: 200,
+		});
+	}, []);
 	return (
 		<Router>
 			<Routes>

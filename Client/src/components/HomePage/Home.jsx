@@ -1,20 +1,11 @@
-import AOS from "aos";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CardData } from "./CardData.js";
 import Card from "./Card/Card.jsx";
 import Footer from "../Utility/Footer/Footer.jsx";
-import "aos/dist/aos.css";
 import "./Home.css";
 
 const Home = () => {
-	useEffect(() => {
-		AOS.init({
-			duration: 1500, // Duration of the animation
-			once: true, // Only animate once
-			offset: 200, // Offset (in pixels) from the top of the element when the animation should start
-		});
-	}, []);
 	const [cards] = useState(CardData);
 	return (
 		<div className='home--page'>
@@ -29,7 +20,10 @@ const Home = () => {
 						onClick={() => window.location.reload()}
 						data-aos={"fade-right"}
 					/>
-					<ul className='home--title--navbar--list' data-aos={"fade-left"}>
+					<ul
+						className='home--title--navbar--list'
+						data-aos={"fade-left"}
+					>
 						<Link
 							className='link'
 							to='/about'
@@ -53,7 +47,10 @@ const Home = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='home--title--content' data-aos={"fade-down"}>
+				<div
+					className='home--title--content'
+					data-aos={"fade-down"}
+				>
 					<h2>WELCOME TO</h2>
 					<h1>FORK & FLAME</h1>
 					<Link

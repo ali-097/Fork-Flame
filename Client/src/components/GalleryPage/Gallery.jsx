@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import Slider from "react-slick";
-import AOS from "aos";
 import NavBar from "../Utility/NavBar/NavBar.jsx";
 import Footer from "../Utility/Footer/Footer.jsx";
 import "./Gallery.css";
@@ -17,13 +15,6 @@ const Gallery = () => {
 		autoplay: true,
 		autoplaySpeed: 4000,
 	};
-	useEffect(() => {
-		AOS.init({
-			duration: 1500,
-			once: true,
-			offset: 200,
-		});
-	}, []);
 	return (
 		<div className='gallery--page'>
 			<NavBar />

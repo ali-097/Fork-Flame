@@ -1,19 +1,6 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "./MenuItemsCard.css";
 
 const MenuItemsCard = ({ title, items }) => {
-	useEffect(() => {
-		AOS.init({
-			duration: 1000,
-			once: true,
-			offset: 200,
-		});
-	}, []);
-	useEffect(() => {
-		AOS.refresh();
-	}, [items]);
 	return (
 		<div>
 			<h1

@@ -51,6 +51,11 @@
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
+.vision--image:hover {
+	transform: scale(1.01);
+	transition: all 0.5s ease-in-out;
+}
+
 .locations--container {
 	display: flex;
 	flex-direction: column;
