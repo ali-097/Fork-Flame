@@ -1,0 +1,27 @@
+.chef--name {
+	font-family: Moon Dance, cursive;
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.chef--info {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.chef--text {
+	font-size: 1.7rem;
+	font-family: Lateef, cursive;
+	width: 70%;
+	text-align: justify;
+}
+
+.chef--image {
+	width: 30%;
+	height: 20rem;
+	object-fit: cover;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}

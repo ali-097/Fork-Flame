@@ -31,6 +31,10 @@ const App = () => {
 					path='/about'
 					element={<About />}
 				/>
+				<Route
+					path='/about/:Id'
+					element={<About />}
+				/>
 			</Routes>
 		</Router>
 	);

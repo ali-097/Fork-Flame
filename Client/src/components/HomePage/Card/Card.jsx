@@ -30,9 +30,10 @@ const Card = ({ cardTitle, cardDescription, cardImage, right }) => {
 					<Link
 						className='link'
 						to={`/${
-							cardTitle === "Location" ||
-							cardTitle === "Our Chefs"
-								? `About?id=${cardTitle}`
+							cardTitle === "Location"
+								? `About/${cardTitle}`
+								: cardTitle === "Our Chefs"
+								? `About/Chefs`
 								: cardTitle
 						}`}
 					>
