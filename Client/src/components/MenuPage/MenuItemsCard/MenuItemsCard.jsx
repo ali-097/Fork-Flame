@@ -25,7 +25,7 @@ const MenuItemsCard = ({ title, items }) => {
 						)}
 						<div
 							className='item--card--overlay'
-							data-aos={item.right ? "fade-left" : "fade-right"}
+							data-aos={item.right ? "flip-left" : "flip-right"}
 						>
 							<h1 className='item--name'>{item.name}</h1>
 							<p className='item--desc'>{item.description}</p>
@@ -35,7 +35,7 @@ const MenuItemsCard = ({ title, items }) => {
 								src={item.image}
 								alt={item.name}
 								className='item--image'
-								data-aos={"fade-left"}
+								data-aos={"flip-left"}
 							/>
 						)}
 					</div>

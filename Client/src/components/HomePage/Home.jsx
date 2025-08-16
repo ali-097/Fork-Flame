@@ -18,11 +18,11 @@ const Home = () => {
 							(e.target.style.cursor = "pointer")
 						}
 						onClick={() => window.location.reload()}
-						data-aos={"fade-right"}
+						data-aos={"flip-right"}
 					/>
 					<ul
 						className='home--title--navbar--list'
-						data-aos={"fade-left"}
+						data-aos={"flip-left"}
 					>
 						<Link
 							className='link'

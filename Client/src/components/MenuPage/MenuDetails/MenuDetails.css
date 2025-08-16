@@ -1,60 +1,120 @@
 .menu--details {
-	animation: fadeInUp 0.5s ease-out;
+  animation: fadeInUp 0.5s ease-out;
+  padding: 2rem;
+  max-width: 100%;
 }
 
 @keyframes fadeInUp {
-	from {
-		transform: translateY(20px);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .menu--details h1 {
-	color: #b9b9b9;
-	font-family: Moon Dance;
-	font-size: 4.5rem;
-	font-weight: 400;
-	margin-bottom: 2rem;
-	animation: fadeInLeft 0.5s ease-out;
+  color: #b9b9b9;
+  font-family: Moon Dance;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  animation: fadeInLeft 0.5s ease-out;
+  text-align: center;
 }
 
 .menu--details p {
-	color: #fff;
-	font-family: Lateef;
-	font-size: 1.6rem;
-	font-weight: 400;
-	width: 51rem;
-	margin-bottom: 2rem;
-	animation: fadeInRight 0.5s ease-out;
+  color: #fff;
+  font-family: Lateef;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 51rem;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  animation: fadeInRight 0.5s ease-out;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu--details--name:hover + .menu--details--desc {
-	transform: scale(1.05) translateX(1rem);
-	transition: transform 1s ease-in-out;
+  transform: scale(1.02) translateX(0.5rem);
+  transition: transform 0.5s ease-in-out;
 }
 
 @keyframes fadeInLeft {
-	from {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeInRight {
-	from {
-		opacity: 0;
-		transform: translateX(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Tablet responsiveness */
+@media screen and (max-width: 1024px) {
+  .menu--details {
+    padding: 1.5rem;
+  }
+
+  .menu--details h1 {
+    font-size: 3.5rem;
+  }
+
+  .menu--details p {
+    font-size: 1.4rem;
+    width: 45rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .menu--details {
+    padding: 1rem;
+  }
+
+  .menu--details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu--details p {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu--details--name:hover + .menu--details--desc {
+    transform: scale(1.01);
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .menu--details {
+    padding: 0.5rem;
+  }
+
+  .menu--details h1 {
+    font-size: 2rem;
+  }
+
+  .menu--details p {
+    font-size: 1rem;
+  }
 }

@@ -1,39 +1,105 @@
 .footer {
-	background-color: #d7d7d7;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  background-color: #d7d7d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
 }
 
 .footer > img {
-	width: 10rem;
-	margin-top: 4rem;
+  width: 10rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
 }
 
 .footer > img:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .socials {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.socials img {
+  width: 2.5rem;
+  height: auto;
+  max-width: 100%;
 }
 
 .socials img:hover {
-	transform: scale(1.05);
-	opacity: 0.8;
-	transition: all 0.1s ease-in-out;
-	cursor: pointer;
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .footer p {
-	color: #2b332e;
-	text-align: center;
-	font-family: Lateef;
-	font-size: 1.5rem;
-	font-weight: 400;
+  color: #2b332e;
+  text-align: center;
+  font-family: Lateef;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 2rem 0;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+/* Mobile responsiveness for Footer */
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .footer > img {
+    width: 8rem;
+    margin-top: 1rem;
+  }
+
+  .socials {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .socials img {
+    width: 2rem;
+  }
+
+  .footer p {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 1rem 0.25rem;
+  }
+
+  .footer > img {
+    width: 6rem;
+  }
+
+  .socials {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .socials img {
+    width: 1.8rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+    line-height: 1.6;
+  }
 }

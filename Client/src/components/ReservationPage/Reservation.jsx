@@ -91,10 +91,8 @@ const Reservation = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call - always show success since backend doesn't work
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      // Try to make the actual API call but don't let it fail the submission
       try {
         await axios.post(
           "http://localhost:3000/save-reservation",
@@ -104,10 +102,8 @@ const Reservation = () => {
         console.log("Backend not available, but showing success anyway");
       }
 
-      // Show success modal
       setShowModal(true);
 
-      // Reset form
       setReservationData({
         name: "",
         email: "",
@@ -118,7 +114,6 @@ const Reservation = () => {
       });
       setErrors({});
     } catch (error) {
-      // This shouldn't happen since we're always showing success
       console.error("Unexpected error:", error);
     } finally {
       setIsSubmitting(false);
@@ -131,7 +126,6 @@ const Reservation = () => {
       [field]: value,
     });
 
-    // Clear error for this field when user starts typing
     if (errors[field]) {
       setErrors({
         ...errors,
@@ -144,7 +138,6 @@ const Reservation = () => {
     setShowModal(false);
   };
 
-  // Get today's date for min attribute
   const getTodayDate = () => {
     const today = new Date();
     return today.toISOString().split("T")[0];
@@ -153,7 +146,7 @@ const Reservation = () => {
   return (
     <div className="reservation--page">
       <NavBar />
-      <div className="reservation--form--container" data-aos={"flip-down"}>
+      <div className="reservation--form--container" data-aos={"fade-up"}>
         <form onSubmit={saveReservation} className="reservation--form">
           <h2 className="form-title">Make a Reservation</h2>
 
@@ -269,7 +262,6 @@ const Reservation = () => {
         </form>
       </div>
 
-      {/* Confirmation Modal */}
       {showModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
