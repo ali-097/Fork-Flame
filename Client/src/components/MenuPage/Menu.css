@@ -1,8 +1,9 @@
 .menu--page {
-	background-image: url("./background.png");
-	background-position: center;
+  /* background-image: url("./background.png");
+	background-position: center; */
+  background-color: #2b332e;
 }
 
 .menu--items--card {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
